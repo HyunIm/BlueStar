@@ -1,6 +1,6 @@
 <!--
 	@File : index.html
-	@Dev : Lim Hyun (hyunzion@gmail.com)
+	@Dev : Lim Hyun (hyunzion@gmail.com), Park Gyu Min(pkm229125@naver.com)
 	@Since : 2020-07-06
 -->
 
@@ -58,17 +58,25 @@
 									
 									<fieldset>
       <div class="box_login">
-		  <form action="./user.php">
-			  아이디:<input id='userId' type='text'/>
+		  <form method="POST" action="logincheck.php">
+
+			  <div>
+				  <label for="id">군번</label>
+				  <input type="text" name="armynumber"/>
+			  </div>
 			 
-			  <br>
-			  비밀번호:<input id='password' type='password'/>
-			  <br>
+			  <div>
+				<label for="pw">비밀번호</label>
+				<input type="password" name="pw"/>
+			</div>
 
+			<br></br>
 			  <input type='submit' value='로그인'>
+			</form>
+		
+		</div>
 
-
-		  </form>
+		  
 		  <p></p>
 		  <li><a href="signup.html" class="button primary">회원가입</a></li>
 							</ul>

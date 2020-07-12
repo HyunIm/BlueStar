@@ -1,6 +1,6 @@
 <!--
 	@File : signup.html
-	@Dev : Lim Hyun (hyunzion@gmail.com)
+	@Dev : Lim Hyun (hyunzion@gmail.com), Park Gyu Min(pkm229125@naver.com)
 	@Since : 2020-07-08
 -->
 
@@ -47,31 +47,42 @@
 							<h2>회원 가입</h2>
 							<p> 다중2소대 회원가입 </p>
 						</header>
+
+						<form action = "signup.php" method="POST">
+
 						<section class="wrapper style5">
 							<div class="inner">
 								<div class="row gtr-uniform">
-									<div class="col-12">
-										<input type="text" name="demo-name" id="demo-name" value="" placeholder="군번" />
-									</div>
+									
+									
+										
+										<div class="col-12">
+											<input type="text" name="armynumber" placeholder="군번" />
+										</div>
 
-									<div class="col-12">
-										<input type="password" name="demo-name" id="demo-name" value="" placeholder="비밀번호" />
-									</div>
+										<div class="col-12">
+											<input type="password" name="pw" placeholder="비밀번호" />
+										</div>
 
-									<div class="col-12">
-										<input type="password" name="demo-name" id="demo-name" value="" placeholder="비밀번호 확인" />
-									</div>
+										<div class="col-12">
+											<input type="password" name="pwc" placeholder="비밀번호 확인" />
+										</div>
 
-									<div class="col-12">
-										<input type="text" name="demo-name" id="demo-name" value="" placeholder="이름" />
-									</div>
+										<div class="col-12">
+											<input type="text" name="username" placeholder="이름" />
+										</div>
 
-									<ul class="actions">
-										<li><a href="index.html" class="primary button">회원가입</a></li>
-									</ul>
+										<ul class="actions">
+											<li><input type="submit" value="회원가입" class="primary button"></a></li>
+										</ul>
+
+									
 								</div>
 							</div>
 						</section>
+
+						</form>
+
 					</article>
 
 				<!-- Footer -->
