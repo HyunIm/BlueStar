@@ -33,12 +33,10 @@ if($result->num_rows==1)
          echo"세션 저장 실패";
       }
    }
-   else{
+   else
+   {
       echo"아이디나 비밀번호가 틀렸습니다";
    }
-인
-else{
-   echo"아이디나 비밀번호가 틀렸습니다";
 }
 
 

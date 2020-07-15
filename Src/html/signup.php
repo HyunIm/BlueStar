@@ -17,7 +17,7 @@ if($pw!=$pwc)
     exit();
 }
 
-else if($id==NULL || $pw==NULL || $username==NULL ||)
+else if($id==NULL || $pw==NULL || $username==NULL)
 {
     echo "빈칸들을 모두 채워주세요";
     echo "<a href=signup.html>back page</a>";
