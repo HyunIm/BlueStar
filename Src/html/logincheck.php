@@ -12,7 +12,7 @@ session_start(); // 세션
 $id = $_POST['armynumber']; // 입력한 군번
 $pw = $_POST['pw']; // 입력한 패스워드
 
-$mysqli=mysqli_connect("112.175.184.88","signal3007","q1w2e3r4!","signal3007"); //sql 연결 정보
+$mysqli=mysqli_connect("localhost","signal3007","q1w2e3r4!","signal3007"); //sql 연결 정보
 
 $check = "SELECT * from armyusers where armynumber='$id' and userpw='$pw'";
 $result = $mysqli->query($check);

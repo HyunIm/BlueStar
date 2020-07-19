@@ -17,16 +17,16 @@ if($pw!=$pwc)
     exit();
 }
 
-else if($id==NULL || $pw==NULL || $username==NULL)
+else if($id==NULL || $pw==NULL || $name==NULL)
 {
-    echo "빈칸들을 모두 채워주세요";
+    echo "empty line";
     echo "<a href=signup.html>back page</a>";
     exit();
 }
 
 
 //데이터 베이스 연결하기 위한 것, <아이피, 아이디, 비번, 데이터베이스 이름> 순임 
-$mysqli=mysqli_connect("112.175.184.88","signal3007","q1w2e3r4!","signal3007");
+$mysqli=mysqli_connect("localhost","signal3007","q1w2e3r4!","signal3007");
 
 //아이디가 이미 가입되어있는지 중복 여부 확인
 //ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
@@ -34,7 +34,7 @@ $check="SELECT *from armyusers WHERE armynumber='$id' ";
 $result=$mysqli->query($check);
 if($result->num_rows==1)
 {
-    echo "중복된 id 입니다";
+    echo "failid";
     echo "<a href=signup.html>back page</a>";
     exit();
 }
@@ -45,7 +45,7 @@ $signup=mysqli_query($mysqli,"INSERT INTO armyusers (armynumber,userpw,username)
 
 if($signup)
 {
-    echo "회원가입 성공하였습니다";
+    echo "success";
 }
 
 ?>
