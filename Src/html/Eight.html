@@ -1,0 +1,169 @@
+<!--
+	@File : Eight.html
+	@Dev : Lim Hyun (hyunzion@gmail.com)
+	@Since : 2021-04-08
+-->
+
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+
+<script>
+	let today = new Date();
+	let year = today.getFullYear();
+	let month = today.getMonth() + 1;
+	let date = today.getDate();
+	let day_num = today.getDay();
+	let day;
+
+	switch(day_num){
+		case 1:
+			day = "월";
+			break;
+		case 2:
+			day = "화";
+			break;
+		case 3:
+			day = "수";
+			break;
+		case 4:
+			day = "목";
+			break;
+		case 5:
+			day = "금";
+			break;
+		case 6:
+			day = "토";
+			break;
+		case 7:
+			day = "일";
+			break;
+	}
+
+	let date_write = "일자 : ('" + year + ". "+ month + ". " + date + ". (" + day + "))";
+</script>
+
+<html>
+	<head>
+		<title>Blue Star</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">7생활관 상향식 일일결산</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span></span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html"> 홈 화면 </a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<article id="main">
+
+						<section class="wrapper style5">
+							<div class="inner">
+								<div style="float:right">
+									<script>
+										document.write(date_write);
+									</script>
+								</div>
+								<br><br>
+
+									<p>1. 구타 및 가혹행위, 성군기 위반행위, 병영부조리, 자살징후</p>
+									<input type="text" placeholder="없음" />
+									<br>
+
+									<p>2. 애로 및 건의사항</p>
+									<input type="text" placeholder="없음" />
+									<br>
+
+									<p>3. 오늘 과업</p>
+									<input type="text"/>
+									<br>
+
+									<p>4. 관찰 및 면담 기록</p>
+									<div class="table-wrapper">
+										<table>
+											<tbody>
+												<tr>
+													<td>상병 서영준</td>
+													<td><input type="text" placeholder="특이사항 없음" /></td>
+												</tr>
+												<tr>
+													<td>병장 오지훈</td>
+													<td><input type="text" placeholder="특이사항 없음" /></td>
+												</tr>
+												<tr>
+													<td>상병 김민제</td>
+													<td><input type="text" placeholder="특이사항 없음" /></td>
+												</tr>
+												<tr>
+													<td>병장 서민규</td>
+													<td><input type="text" placeholder="특이사항 없음" /></td>
+												</tr>
+												<tr>
+													<td>상병 장민혁</td>
+													<td><input type="text" placeholder="특이사항 없음" /></td>
+												</tr>
+												<tr>
+													<td>상병 이규재</td>
+													<td><input type="text" placeholder="특이사항 없음" /></td>
+												</tr>
+												<tr>
+													<td>일병 이승배</td>
+													<td><input type="text" placeholder="특이사항 없음" /></td>
+												</tr>
+												<tr>
+													<td>일병 최해찬</td>
+													<td><input type="text" placeholder="특이사항 없음" /></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<br>
+							</div>
+						</section>
+
+						</form>
+
+					</article>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="copyright">
+							<li>&copy; 다중2소대 </li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
